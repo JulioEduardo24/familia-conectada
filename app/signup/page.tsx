@@ -114,7 +114,7 @@ export default function SignupPage() {
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               className="mt-1 w-full rounded-lg border border-zinc-300 px-3 py-2.5 text-base outline-none transition-colors focus:border-zinc-500 sm:text-sm dark:border-zinc-700 dark:bg-zinc-900"
-              placeholder="Ej. María Calla"
+              placeholder="Ej. Julio Eduardo"
             />
           </div>
 

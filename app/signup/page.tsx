@@ -43,10 +43,11 @@ export default function SignupPage() {
       });
 
       if (signUpError) {
+        const msg = signUpError.message.toLowerCase();
         setError(
-          signUpError.message.includes("already registered")
+          msg.includes("already registered") || msg.includes("already exists")
             ? "Ese correo ya tiene una cuenta. Intenta iniciar sesión."
-            : "No se pudo crear la cuenta. Intenta de nuevo."
+            : `No se pudo crear la cuenta: ${signUpError.message}`
         );
         setLoading(false);
         return;

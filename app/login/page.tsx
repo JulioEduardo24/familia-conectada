@@ -26,7 +26,7 @@ export default function LoginPage() {
     setLoading(false);
 
     if (error) {
-      setError("No se pudo iniciar sesión. Revisa tu correo y contraseña.");
+      setError(`No se pudo iniciar sesión: ${error.message}`);
       return;
     }
 

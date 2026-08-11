@@ -200,7 +200,7 @@ function MyStatusEditor({ member }: { member: FamilyMember }) {
             saved ? "opacity-100" : "opacity-0"
           }`}
         >
-          Guardado ✓
+          Guardado
         </span>
       </div>
     </div>
